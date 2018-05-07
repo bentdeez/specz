@@ -5,7 +5,7 @@
 </head>
 
 <body onload="valid()">
-<SCRIPT LANGUAGE="JavaScript">
+<script>
 function valid() {
 
     var field = prompt("Please enter your age");
@@ -17,23 +17,19 @@ function valid() {
         alert("Good, you are 18 or older");
     } else {
         alert("You are only " + userAge + ". Try again when you are 18.");
-        field.focus();
-        field.select();
         return false;
     }
 
 }
-</SCRIPT>
+</script>
 
 <form method = "post" action = "FeedbackSaveAndDisplay.php">
-<input type = "hidden" name = "user" value = "test"/>
-<input type = "hidden" name = "pwd" value = "test"/>
-<p>Enter your name, feedback, score</p>
+<p>Enter your name, feedback, and rating score</p>
 <table>
 <tr>
 <td>Name</td>
 <td>
-<input type = "text" name = "name" />
+<input type = "text" name = "name" autofocus/>
 </td>
 </tr>
 <tr>
@@ -67,3 +63,4 @@ value = "Submit" />
 </form>
 </body>
 </html>
+
