@@ -1,0 +1,69 @@
+<html>
+
+<head>
+<title>Feedback Form</title>
+</head>
+
+<body onload="valid()">
+<SCRIPT LANGUAGE="JavaScript">
+function valid() {
+
+    var field = prompt("Please enter your age");
+    var userAge = parseInt(field);
+    if (!userAge) {
+        alert("You must indicate your age.");
+        return false;
+    } else if (userAge >= 18) {
+        alert("Good, you are 18 or older");
+    } else {
+        alert("You are only " + userAge + ". Try again when you are 18.");
+        field.focus();
+        field.select();
+        return false;
+    }
+
+}
+</SCRIPT>
+
+<form method = "post" action = "FeedbackSaveAndDisplay.php">
+<input type = "hidden" name = "user" value = "test"/>
+<input type = "hidden" name = "pwd" value = "test"/>
+<p>Enter your name, feedback, score</p>
+<table>
+<tr>
+<td>Name</td>
+<td>
+<input type = "text" name = "name" />
+</td>
+</tr>
+<tr>
+<td>Feedback</td>
+
+<td>
+<input type = "text" name = "feedback" />
+</td>
+</tr>
+
+
+
+<tr>
+<td>Score</td>
+<td>
+<input type = "text" name = "score" />
+</td>
+</tr>
+<tr>
+<td>Product</td>
+<td>
+<input type = "text" name = "product" />
+</td>
+<tr>
+<td colspan = "2">
+<input type = "submit"
+value = "Submit" />
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
