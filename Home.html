@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Specz</title>
+  
+<!--<link href = "css/bootstrap.min.css" ref= "stylesheet">
+  <link href = "http://fonts.googleapis.com/css?family=open+sans:400,600" rel= "stylesheet" type = "text/css">
+-->
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href = "css/style.css" rel= "stylesheet"> 
+  <style>
+      /* Remove the navbar's default rounded borders and increase the bottom margin 
+    .navbar {
+      margin-bottom: 0px;
+      border-radius: 0;
+    }*/
+    
+     /* body {
+      font: 400 15px/1.8 Lato, sans-serif;
+      color: #777;*/
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
+      background-color: #ffffff
+      opacity: 0.6;
+    }
+    
+      .carousel-inner img {
+      width: 100%;
+      margin: auto;
+     
+      height: 20px;
+  }
+  
+ /*   .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #2e9cca;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.7; }
+      
+        .navbar li a, .navbar .navbar-brand { 
+      color: #ffffff !important;
+  }
+  
+    .navbar-nav li a:hover {
+      color: #ffffff !important;
+  }
+      
+        .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }*/
+  p, h1
+  {  font-family: Lato, sans-serif;}
+  
+  footer {
+  background-color: #2e9cca;
+  
+  }
+  
+  .info {
+  
+  background-image: http://jasonbentley.altervista.org/Project/textured_grey_background.jpg;
+  
+  }
+      
+  </style>  
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">Specz</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="AboutUs.html">ABOUT</a></li>
+        <li><a href="people.html">PEOPLE</a></li>
+        <li><a href="products6v2.html">PRODUCTS</a></li>
+        <li><a href="feedback.html">FEEDBACK</a></li>
+        <li><a href="Contact_us.html">CONTACT US</a></li>
+        <li><a href="#">
+        <span class="glyphicon glyphicon-shopping-cart"></span>
+        </a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+ <!-- Carousel with arrows to change images  -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src= "http://sunski.com/sunspot/wp-content/uploads/2018/03/DSC3448.jpg" alt="Los Angeles" width="1200" height="500" >
+    </div>
+
+    <div class="item">
+      <img src="http://sunski.com/sunspot/wp-content/uploads/2018/03/LY3A0918.jpg" alt="Chicago" width="1200" height="500">
+    </div>
+
+    <div class="item">
+      <img src="http://sunski.com/sunspot/wp-content/uploads/2018/03/IWD-header.jpg" alt="New York" width="1200" height="500" >
+    </div>
+  </div>
+ </div> 
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
+
+
+ <!-- Jumbotron -->
+<div class="jumbotron">
+<div id= "info" class="container text-center">
+    <h1>Specz</h1>
+    <script type = "text/javascript">
+		var d = new Date();
+		var hours = d.getHours();
+		var minutes = d.getMinutes();
+
+    if (hours > 12) {
+        hours -= 12;
+    } else if (hours === 0) {
+        hours = 12;
+    }
+
+	document.writeln("<p>Today is " + (d.getMonth()+1) + "/" + d.getDate() + "/" + d.getFullYear()+ 
+	 " and the time is " + hours + ":" + minutes +".</p>");
+	</script>
+    
+    <p>Selling high quality shades since 1995</p>
+    <p>Specz is your one stop shop for all your sunglass needs. All of our high quality sunglasses are
+    made in the U.S.A. and are polarized. We know you'll love our sunglasses, so we include a lifetime warranty on every 
+    purchase. </p>
+   </div> 
+</div>
+
+
+ <!-- What's new  -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h1>What's New</h1><br>
+  <h4>Shop Our New Releases</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="https://github.com/bentdeez/specz/blob/master/Style%202.png?raw=true" alt="Paris" width="400" height="300">
+        <p><strong>Veronica</strong></p>
+        <button class="btn" data-toggle="modal" data-target="#myModal">Shop Now</button>
+        <p></p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="https://github.com/bentdeez/specz/blob/master/Style%205.png?raw=true" alt="New York" width="400" height="300">
+        <p><strong>Aquarius</strong></p>
+        <button class="btn" data-toggle="modal" data-target="#myModal">Shop Now</button>
+        <p></p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="https://github.com/bentdeez/specz/blob/master/Style%206.png?raw=true" alt="San Francisco" width="400" height="300">
+        <p><strong>The Everyday</strong></p>
+        <button class="btn" data-toggle="modal" data-target="#myModal">Shop Now</button>
+        <p></p>
+      </div>
+    </div>
+  </div><br>
+</div>
+
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+</footer>
+
+
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
