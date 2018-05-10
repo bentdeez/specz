@@ -1,0 +1,156 @@
+<html>
+
+<head>
+<title>Feedback Form</title>
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href = "css/style.css" rel= "stylesheet"> 
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+.w3-container{
+opacity: 0.6;
+
+}
+
+</style>
+
+</head>
+
+<body>
+<br><br><br><br><br><br>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">Specz</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="AboutUs.html">ABOUT</a></li>
+        <li><a href="people.html">PEOPLE</a></li>
+        <li><a href="products6v2.html">PRODUCTS</a></li>
+        <li><a href="feedback.html">FEEDBACK</a></li>
+        <li><a href="Contact_us.html">CONTACT US</a></li>
+        <li><a href="#">
+        <span class="glyphicon glyphicon-shopping-cart"></span>
+        </a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<!--<form method = "post" action = "FeedbackSaveAndDisplay.php" >
+
+<input type = "hidden" name = "user" value = "test"/>
+<input type = "hidden" name = "pwd" value = "test"/>
+<p>Enter your name, feedback, score</p>
+<table>
+<tr>
+<td>Name</td>
+<td>
+<input type = "text" name = "name" />
+</td>
+</tr>
+<tr>
+<td>Feedback:</td>
+
+<td>
+<input type = "text" name = "feedback" />
+</td>
+</tr>
+<tr>
+<td>Score</td>
+<td>
+<input type = "text" name = "score" />
+</td>
+</tr>
+<tr>
+<td>Product</td>
+<td>
+<input type = "text" name = "product" />
+</td>
+<tr>
+<td>Age</td>
+<td>
+<input type = "text" id = "age" />
+</td>
+<tr>
+<tr>
+<td colspan = "2">
+<input type = "submit" onClick="return valid()" value = "Submit" />
+</td>
+</tr>
+</table>
+
+</form>
+
+</div> -->
+
+<div class="w3-container w3-blue-grey"> 
+<form method = "post" action = "FeedbackSaveAndDisplay.php" >
+    <div class="form-group">
+      <label for="Name">Name:</label>
+      <input type="text" class="form-control" id="name" placeholder="" name="name">
+    </div>
+    <div class="form-group">
+      <label for="Feedback">Feedback:</label>
+      <input type="text" class="form-control" id="feedback" placeholder="" name="feedback">
+    </div>
+      <div class="form-group">
+      <label for="Feedback">Score:</label>
+      <input type="text" class="form-control" id="score" placeholder="" name="score">
+    </div>
+   <div class="form-group">
+  <label for="sel1">Products:</label>
+  <select class="form-control" id="products">
+    <option>Where's the Beach Bro</option>
+    <option>Camo Goggles</option>
+    <option>Sun-Sighters</option>
+    <option>Basic 2.0</option>
+    <option>Gamora</option>
+    <option>Laser Laser LAZER</option>
+  	</select>
+	</div>
+	  <div class="form-group">
+      <label for="Feedback">Age:</label>
+      <input type="text" class="form-control" id="age" placeholder="" name="age">
+    </div>
+    <button type="submit" class="btn btn-default" onClick="return valid()" value = "Submit">Submit</button>
+  </form>
+</div>
+
+
+<script type= "text/javascript">
+ function valid() {   
+    // var field = prompt("Please enter your age");
+
+     var field = document.getElementById("age").value;
+     var userAge = parseInt(field); 
+     if (!userAge) { 
+         alert("You must indicate your age."); 
+         return false; 
+     } else if (userAge >= 18) { 
+         alert("Good, you are 18 or older")
+         return true; 
+     } else { 
+         alert("You are only " + userAge + ". Try again when you are 18."); 
+         return false; 
+     } 
+     
+     //onSubmit= "return valid();"
+} 
+</script>
+
+
+
+</body>
+</html>
